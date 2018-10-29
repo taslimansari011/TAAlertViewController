@@ -53,6 +53,13 @@ extension CustomAlertViewController {
         titleView.backgroundColor = titleViewBGColor
         msgView.backgroundColor = msgViewBGColor
         
+        if alertTitle?.isEmpty ?? true {
+            self.titleView.isHidden = true
+        }
+        if alertMsg?.isEmpty ?? true {
+            self.msgView.isHidden = true
+        }
+        
         self.titleLabel.text = alertTitle
         titleLabel.textColor = self.titleTextColor
         self.msgLabel.text = alertMsg

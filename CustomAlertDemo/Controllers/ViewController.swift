@@ -21,8 +21,6 @@ class ViewController: UIViewController {
         if let alert = CommonMethods.alertController {
             alert.alertTitle = "Message"
             alert.alertMsg = "A quick brown fox jumps over a white lazy dog."
-//            alert.msgViewBGColor = .lightGray
-//            alert.titleViewBGColor = .lightGray
             alert.addCustomAlertAction(title: "Ok", target: self, selector: #selector(okButtonTapped))
             alert.addCustomAlertAction(title: "Dismiss") { (sender) in
                 self.setMsgLabelWith(text: sender.titleLabel?.text)
