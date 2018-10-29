@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D299BDE92186DCB600BEDF71 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D299BDE82186DCB600BEDF71 /* UIColor+Extension.swift */; };
+		D299BDEC2186E1B600BEDF71 /* CommonMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = D299BDEB2186E1B600BEDF71 /* CommonMethods.swift */; };
 		D2A1B47A21842CB300D230EF /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A1B47921842CB300D230EF /* UIViewController+Extension.swift */; };
 		D2A1B47C2184324800D230EF /* CustomAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A1B47B2184324800D230EF /* CustomAlertViewController.swift */; };
 		D2E932E9217F025000E87C45 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E932E8217F025000E87C45 /* AppDelegate.swift */; };
@@ -17,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D299BDE82186DCB600BEDF71 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		D299BDEB2186E1B600BEDF71 /* CommonMethods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonMethods.swift; sourceTree = "<group>"; };
 		D2A1B47921842CB300D230EF /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		D2A1B47B2184324800D230EF /* CustomAlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlertViewController.swift; sourceTree = "<group>"; };
 		D2E932E5217F025000E87C45 /* CustomAlertDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomAlertDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -39,10 +43,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D299BDEA2186DE6B00BEDF71 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D2E932EA217F025000E87C45 /* ViewController.swift */,
+				D2E932FE217F0A4C00E87C45 /* CustomAlertView */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
 		D2A1B47821842C9600D230EF /* Common */ = {
 			isa = PBXGroup;
 			children = (
 				D2A1B47921842CB300D230EF /* UIViewController+Extension.swift */,
+				D299BDE82186DCB600BEDF71 /* UIColor+Extension.swift */,
+				D299BDEB2186E1B600BEDF71 /* CommonMethods.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -67,9 +82,8 @@
 			isa = PBXGroup;
 			children = (
 				D2A1B47821842C9600D230EF /* Common */,
-				D2E932FE217F0A4C00E87C45 /* CustomAlertView */,
+				D299BDEA2186DE6B00BEDF71 /* Controllers */,
 				D2E932E8217F025000E87C45 /* AppDelegate.swift */,
-				D2E932EA217F025000E87C45 /* ViewController.swift */,
 				D2E932EC217F025000E87C45 /* Main.storyboard */,
 				D2E932EF217F025800E87C45 /* Assets.xcassets */,
 				D2E932F1217F025800E87C45 /* LaunchScreen.storyboard */,
@@ -160,7 +174,9 @@
 				D2E932EB217F025000E87C45 /* ViewController.swift in Sources */,
 				D2E932E9217F025000E87C45 /* AppDelegate.swift in Sources */,
 				D2A1B47C2184324800D230EF /* CustomAlertViewController.swift in Sources */,
+				D299BDEC2186E1B600BEDF71 /* CommonMethods.swift in Sources */,
 				D2A1B47A21842CB300D230EF /* UIViewController+Extension.swift in Sources */,
+				D299BDE92186DCB600BEDF71 /* UIColor+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

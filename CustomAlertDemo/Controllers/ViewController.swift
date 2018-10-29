@@ -18,17 +18,17 @@ class ViewController: UIViewController {
     }
     
     @IBAction func showAlert(_ sender: UIButton) {
-        let storyboard = UIStoryboard.init(name: "Main", bundle: nil)
-        if let alert = storyboard.instantiateViewController(withIdentifier: "CustomAlertViewController") as? CustomAlertViewController {
+        if let alert = CommonMethods.alertController {
             alert.alertTitle = "Message"
             alert.alertMsg = "A quick brown fox jumps over a white lazy dog."
-            
+//            alert.msgViewBGColor = .lightGray
+//            alert.titleViewBGColor = .lightGray
             alert.addCustomAlertAction(title: "Ok", target: self, selector: #selector(okButtonTapped))
             alert.addCustomAlertAction(title: "Dismiss") { (sender) in
-                self.setMsgLabelWith(text: "Dismiss")
+                self.setMsgLabelWith(text: sender.titleLabel?.text)
             }
             alert.addCustomAlertAction(title: "Cancel") { (sender) in
-                self.setMsgLabelWith(text: "Cancel")
+                self.setMsgLabelWith(text: sender.titleLabel?.text)
             }
             self.present(alert, animated: true, completion: nil)
         }
